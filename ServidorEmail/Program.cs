@@ -4,7 +4,7 @@ namespace ServidorEmails
 {
     public class ServidorEmailsExample
     {
-        public static string emailOrigem = "CriptografiaFake_2TPII_SpamsFake202122@hotmail.com";
+        public static string emailOrigem = "youremail@domain.com";
         public static string linkPhishing = "http://localhost/Tp2/FakeLoginNAO_ABRIR.php";
         public static string linkAVirus = "https://www.avast.com/ativirus_FAKE";
         
@@ -40,7 +40,7 @@ namespace ServidorEmails
 
             client.UseDefaultCredentials = false;
             client.EnableSsl = true;
-            client.Credentials = new System.Net.NetworkCredential(emailOrigem, "Criptografia");
+            client.Credentials = new System.Net.NetworkCredential(emailOrigem, "yourE-mailPassword");
             client.Port = 587; 
             client.Host = "smtp.office365.com";
             //client.Host = "smtp.live.com";
