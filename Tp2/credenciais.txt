@@ -1,8 +1,0 @@
-j_username=al1234
-j_password=1234567
-_eventId_proceed=
-
-j_username=al89675
-j_password=1098756
-_eventId_proceed=
-
