@@ -1,0 +1,267 @@
+.alert_text {
+    text-align: justify !important;
+}
+
+.recaptcha-wrap {
+	padding-left: 8%;
+	padding-top: 2%;
+    	padding-bottom: 2%;
+}
+
+.footer {
+    padding-right: 0px;
+    padding-left: 10px;
+}
+
+.footer_head {
+	padding-top:3px;
+	border-top: 1px dotted #ccc;
+	margin-top: 10px;
+}
+
+.footer_security {
+	float:left;
+	padding-top: 16px;
+	padding-left: 10px;
+}
+
+.footer_help {
+	float:left;
+	padding-top: 16px;
+	padding-left: 6px;
+}
+.footer_rctsaai {
+   float:right;
+}
+.footer_head_UTAD {
+	padding-top:3px;
+	margin-top: 40px;
+}
+
+.footer_Compete {
+	vertical-align: middle;
+}
+
+.help {
+    float: left;
+    margin-top: 22px;
+    text-decoration: underline;
+    color: #337AB7;
+}
+
+.logo {
+	float: right;
+	padding-top:5px;
+}
+
+.logo_sp {
+	text-align:center;
+	padding-bottom: 3%;
+	padding-top: 3%;
+}
+
+.desc_sp {
+	text-align: justify;
+}
+
+.img_srvp {
+	border: 1px solid #ccc;
+	max-width: 80%;
+    	height: auto;
+}
+
+/*
+html {
+	background: url(/idp/FCCN/images/bg_1170px_web.jpg) no-repeat center center fixed; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+*/
+
+html {
+	background: white;
+}
+
+body {
+	background: transparent;
+}
+
+form {
+	padding-top: 13px;
+	border-top: 1px dotted #ccc;
+
+}
+
+.content-middle {
+    padding: 30px 30px 5px 0px;	
+	background-color: #FFFFFF;
+    border: 0;
+	border-radius: 10px;
+    box-shadow: 1px 1px 20px #999999;
+    max-width: 33%;
+    margin: 120px auto;
+    min-width: 250px;
+}
+
+.container {
+    width: 100% !important;
+    font-weight: normal;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 12px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.container_idx {
+  padding-left: 25px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 45px;
+}
+
+.logo_header {
+
+	text-align: center;
+	padding-top:0px;
+	padding-bottom:10px;
+    	padding-left: 9%;
+}
+
+.label_link {
+	color: #666;
+    	font-weight: 200;
+	text-align: left;
+	padding-bottom:15px;
+}
+
+.service {
+
+	text-align: center;
+	padding-bottom:15px;
+	border-bottom: 1px dotted #ccc;
+}
+
+label {
+    color: #666;
+    font-weight: 200;
+}
+
+label, input, button  {
+    line-height: 18px;
+}
+
+.input-xlarge {
+    padding: 7px;
+    font-size: 14px;
+    height: auto;
+    text-align: left;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 5px;	 
+}
+
+.btn-large {
+  width: 100%;
+}
+
+input:focus {
+    box-shadow: inset 0 1px 1px rgba(0,0,0,0.075),0 0 8px rgba(82,168,236,0.6);
+}
+
+.container-UTAD {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+}
+.container-UTAD-footer {
+  padding-top: 60px;
+}
+.footer-UTAD-text {
+  margin-bottom: 12px;
+  text-align: center;
+  color: #31708f;
+  font-weight: normal;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 8px;
+}
+
+
+/************************************** NOVO *****************************************/
+body{
+	color: #717171 !important;
+}
+span#basic-addon2 {
+    display: none !important;
+}
+
+.footer_security {
+    display: none !important;
+}
+
+.footer_help {
+    display: none !important;
+}
+
+img.img-responsive {
+    display: block;
+    margin: 0 auto;
+}
+
+.alert.alert-info {
+    color: #717171;
+    background-color: transparent;
+    border: none;
+    font-size: 1.5em;
+}
+
+.footer_rctsaai {
+	margin-top: 2em !important;
+    float: none !important;
+    text-align: center;
+    margin: 0 auto;
+    margin-left: 10%;
+}
+
+.alert{
+	margin-bottom: 0px;
+}
+.content-middle {
+	max-width: 30% !important;
+    box-shadow: 1px 1px 20px #337ab7 !important;
+	 margin: 0 auto !important;
+    margin-top: 2% !important;
+
+}
+.footer_id {
+	margin-top: 4em !important;
+	margin-bottom: 1em !important;
+    text-align: center;
+    clear: both;
+}
+
+form#loginForm, .footer_head {
+    border: none;
+}
+.container {
+    font-family: "Helvetica Neue", Verdana, sans-serif !important;
+}
+.footer_info {
+    font-size: 11px;
+    TEXT-ALIGN: justify;
+    margin-top: 2em!important;
+}
+
+@media(max-width:1400px){
+  .content-middle{
+    max-width: 40% !important;
+  }
+}
+
+@media(max-width:1060px){
+  .content-middle{
+    max-width: 50% !important;
+  }
+}
+

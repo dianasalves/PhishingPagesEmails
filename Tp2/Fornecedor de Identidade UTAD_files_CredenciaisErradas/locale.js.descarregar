@@ -1,0 +1,24 @@
+function setLocale(value) {
+    URL = window.location.href.split("&")[0];
+    window.location.replace(URL + "&lang=" + value);
+}
+
+function setLocale_ErrorPage(value) {
+    URL = window.location.href.split("?")[0];
+    window.location.replace(URL + "?lang=" + value);
+}
+
+function changeRecaptchaLanguage() {
+	if(window.location.href.indexOf("pt_PT") > -1) {
+		language = "pt-PT";
+	}else{
+		language = "en";
+	}
+  document.querySelector('.g-recaptcha').innerHTML = '';
+
+  var script = document.createElement('script');
+  script.src = 'https://www.google.com/recaptcha/api.js?hl=' + language;
+  script.async = true;
+  script.defer = true;
+  document.querySelector('head').appendChild(script);
+}
