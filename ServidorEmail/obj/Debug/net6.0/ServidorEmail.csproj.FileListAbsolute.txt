@@ -1,0 +1,15 @@
+C:\Users\Win 10\Desktop\Criptografia\ServidorEmail\bin\Debug\net6.0\ServidorEmail.exe
+C:\Users\Win 10\Desktop\Criptografia\ServidorEmail\bin\Debug\net6.0\ServidorEmail.deps.json
+C:\Users\Win 10\Desktop\Criptografia\ServidorEmail\bin\Debug\net6.0\ServidorEmail.runtimeconfig.json
+C:\Users\Win 10\Desktop\Criptografia\ServidorEmail\bin\Debug\net6.0\ServidorEmail.dll
+C:\Users\Win 10\Desktop\Criptografia\ServidorEmail\bin\Debug\net6.0\ServidorEmail.pdb
+C:\Users\Win 10\Desktop\Criptografia\ServidorEmail\obj\Debug\net6.0\ServidorEmail.csproj.AssemblyReference.cache
+C:\Users\Win 10\Desktop\Criptografia\ServidorEmail\obj\Debug\net6.0\ServidorEmail.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Win 10\Desktop\Criptografia\ServidorEmail\obj\Debug\net6.0\ServidorEmail.AssemblyInfoInputs.cache
+C:\Users\Win 10\Desktop\Criptografia\ServidorEmail\obj\Debug\net6.0\ServidorEmail.AssemblyInfo.cs
+C:\Users\Win 10\Desktop\Criptografia\ServidorEmail\obj\Debug\net6.0\ServidorEmail.csproj.CoreCompileInputs.cache
+C:\Users\Win 10\Desktop\Criptografia\ServidorEmail\obj\Debug\net6.0\ServidorEmail.dll
+C:\Users\Win 10\Desktop\Criptografia\ServidorEmail\obj\Debug\net6.0\refint\ServidorEmail.dll
+C:\Users\Win 10\Desktop\Criptografia\ServidorEmail\obj\Debug\net6.0\ServidorEmail.pdb
+C:\Users\Win 10\Desktop\Criptografia\ServidorEmail\obj\Debug\net6.0\ServidorEmail.genruntimeconfig.cache
+C:\Users\Win 10\Desktop\Criptografia\ServidorEmail\obj\Debug\net6.0\ref\ServidorEmail.dll
