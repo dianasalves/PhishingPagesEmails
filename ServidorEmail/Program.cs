@@ -1,8 +1,8 @@
 ﻿using System.Net.Mail;
 
-namespace ServidorEmails
+namespace ServerEmail
 {
-    public class ServidorEmailsExample
+    public class ServerEmailExample
     {
         public static string phishingEmail = "youremail@domain.com";
         public static string phishingPage = "linkPhishingPage";
