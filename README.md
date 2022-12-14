@@ -12,9 +12,9 @@ académicos/educacionais e de conscientizar sobre esta problemática que tem vin
   A página utilizada neste exemplo de ataque foi a página de login do SIDE.
   
   Instruções:
-  1) Inserir um e-mail na linha de comandos
-  2) Ir à caixa de entrada do e-mail e abrir o e-mail recebido
-  3) Fazer start ao serviço Apache no XAMPP
+  1) Fazer start ao serviço Apache no XAMPP 
+  2) Inserir um e-mail na linha de comandos. No caso, de ser mais que um email separar por ";" 
+  3) Ir à caixa de entrada do e-mail e abrir o e-mail recebido
   4) Clicar no URL da página phishing, no e-mail
   5) Inserir dados nos campos e enviar o formulário
   6) Abrir o ficheiro txt "credenciais" e verificar que os dados inseridos foram guardados no ficheiro.
