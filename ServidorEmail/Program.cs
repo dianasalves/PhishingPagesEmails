@@ -4,28 +4,28 @@ namespace ServidorEmails
 {
     public class ServidorEmailsExample
     {
-        public static string emailOrigem = "youremail@domain.com";
-        public static string linkPhishing = "http://localhost/Tp2/FakeLoginNAO_ABRIR.php";
-        public static string linkAVirus = "https://www.avast.com/ativirus_FAKE";
+        public static string phishingEmail = "youremail@domain.com";
+        public static string phishingPage = "linkPhishingPage";
+        public static string passwordPhishingEmail = "yourPassword";
         
         static void Main(string[] args)
         {
 
-            Console.WriteLine("\nUtilize o comando 'EXIT' para sair!");
+            Console.WriteLine("\n Write 'EXIT' to exit the console!");
             while (true)
             {
-                Console.WriteLine("\n\nEmail de Destino da Mensagem: ");
-                string comando = Console.ReadLine();
-                if (comando != "EXIT" )
+                Console.WriteLine("\n\nWrite the Email you want to sent de message: ");
+                string command = Console.ReadLine();
+                if (command != "EXIT" )
                 {
-                    //get o username do email
-                    //string user = comando.Substring(0,comando.IndexOf("@"));   
-                    EnviarEmail(comando);
+                    //get username of the email
+                    //string user = command.Substring(0,command.IndexOf("@"));   
+                    SendEmail(command);
 
                 }
-                else if(comando == "EXIT")
+                else if(command == "EXIT")
                 {
-                    Console.WriteLine("\n\n\nA Sair....BYE!");
+                    Console.WriteLine("\n\n\nEXIT....BYE!");
                     Environment.Exit(0);
                 }
                
@@ -34,13 +34,13 @@ namespace ServidorEmails
            
         }
 
-        static void EnviarEmail(string emailTo)
+        static void SendEmail(string emailTo)
         {
             SmtpClient client = new SmtpClient();
 
             client.UseDefaultCredentials = false;
             client.EnableSsl = true;
-            client.Credentials = new System.Net.NetworkCredential(emailOrigem, "yourE-mailPassword");
+            client.Credentials = new System.Net.NetworkCredential(phishingEmail, passwordPhishingEmail);
             client.Port = 587; 
             client.Host = "smtp.office365.com";
             //client.Host = "smtp.live.com";
@@ -48,47 +48,33 @@ namespace ServidorEmails
             client.DeliveryMethod = SmtpDeliveryMethod.Network;
             try
             {
-                client.Send(EstruraEmail(emailTo));
-                Console.WriteLine("\nA Mensagem foi enviada com Sucesso!");
+                client.Send(EmailStructure(emailTo));
+                Console.WriteLine("\n The Email was sent with SUCCESS!");
             }
             catch (Exception ex)
             {
                 //lblText.Text = ex.ToString();
-                Console.WriteLine("\nERRO!!! Mensagem Não Enviada: " + ex.ToString());
+                Console.WriteLine("\nERROR: The email was not sent, beacuase " + ex.ToString());
                 
 
             }
         }
 
-        static MailMessage EstruraEmail(string emailTo)
+        static MailMessage EmailStructure(string emailTo)
         {
             MailMessage mensagem = new MailMessage();
 
-            //email de destino da mensagem
+            //add the email you want to send the message
             mensagem.To.Add(new MailAddress(emailTo));
-            //email de origem da mensagem
-            mensagem.From = new MailAddress(emailOrigem, "<Serviços de Informática e de Comunicações UTAD>");
-            //assunto da mensagem
-            mensagem.Subject = "Reativação de Conta";
-            //corpo da mensagem
-            mensagem.Body = "Alunos e Docentes da UTAD, " +
-                            "<br/>" +
-                            "<br/> Este email é enviado dos Serviços de Informática e de Comunicação da UTAD." +
-                            "<br/> Relembramos a Academia, que nas próximas 24 horas o SIDE estará em manuntenção. Durante esta manuntenção, é necessário que faça a reativação da sua conta do SIDE através do link: " + linkPhishing +  
-                                   " .Caso contrário poderá perder o acesso ao SIDE!" +
-                            "<br/> Se tiver alguma dúvida contacte os Serviços de Informática e Comunicações da UTAD via email: apoio.tecnicoUTAD_FAKE@utad.pt" +
-                            "<br/> " +
-                            "<br/> " +
-                            "<br/> Com o melhores cumprimentos," +
-                            "<br/> Serviços de Informática e de Comunicações UTAD " +
-                            "<br/> " +
-                            "<br/> " +
-                            "<hr/>" + "Este email foi verificado para vírus pelo Avast antivirus software: " + linkAVirus +
-                            "<br/>" + "Isto é um email de respostas automáticas. Por favor não responda a este email!" +
-                            "<br/>" +
-                            "<br/>" +
-                            "<h5 style=\"background-color:red\">" + "Este email (PHISHING) serve apenas para fins Académicos - Trabalho Prático 2 de Criptografia e Segurança de Sistemas Informáticos. Por favor, se recebeu este email, foi ENGANO...APAGUE-O OU IGNORE-O! OS links são FAKE!" + "</h5>" +
-                            "</hr>";
+            //add the phishing email 
+            //add the name of the organization/person (optional)
+            mensagem.From = new MailAddress(phishingEmail, "name of the organization/person");
+            //subject of the email
+            mensagem.Subject = "yourSubject";
+            //body's message
+            mensagem.Body = "Email's body message" + 
+                             "<br/>" +
+                            phishingPage;
 
             mensagem.IsBodyHtml = true;
 
