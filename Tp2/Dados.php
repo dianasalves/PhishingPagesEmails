@@ -1,16 +1,17 @@
 
 
+//wait 3 seconds before redirection
 <script type="text/javascript">
     window.setTimeout(function() {window.location.href='https://side.utad.pt/';}, 3000);
 </script>
 
 <?php 
 
-//parametros inseridos pelo utilizador
+//parameters insert by the user
 $j_username = $_POST['j_username'];
 $j_password = $_POST['j_password'];
 
-//mensagem que irá ser apresentada ao utilizador
+//message for user
 $mensagem = "A sua conta foi ativada com sucesso! Irá ser redirecionado para a página inicial do SIDE dentro de momentos....";
 
 while(true)
