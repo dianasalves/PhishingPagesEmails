@@ -1,12 +1,13 @@
-﻿using System.Net.Mail;
+using System.Net.Mail;
 
 namespace ServerEmail
 {
     public class ServerEmailExample
     {
         public static string phishingEmail = "youremail@domain.com";
-        public static string phishingPage = "linkPhishingPage";
         public static string passwordPhishingEmail = "yourPassword";
+        public static string phishingPage = "linkPhishingPage";
+        
         
         static void Main(string[] args)
         {
