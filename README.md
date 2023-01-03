@@ -1,8 +1,9 @@
 # PhishingPagesEmails
 
-    The practical work consists of reproducing a cyber threat. In this case, the chosen threat was Phishing. Therefore, one of the objectives of this work is to carry 
-out a phishing attack, with the purposes: to raise awareness about these types of threats and how simple it is; and anyone, with the right tools, can carry out this type 
-of attack.
+   
+   The practical work consists of reproducing a cyber threat. In this case, the chosen threat was Phishing. Therefore, one of the objectives of this work is to carry 
+out a phishing attack, with the purposes: to raise awareness about these types of threats and how simple it is; and anyone, with the right tools, can carry out this 
+type of attack.
    The links that relate to the phishing attack are not available online, as the intention of this practical work is solely for academic/educational purposes and to raise
 awareness about this problem that has been increasing since the pandemic began.
   Additionally, the information contained in this work must be used for EDUCATIONAL and NON-MALICIOUS purposes, since phishing is a crime! The tests that were made 
