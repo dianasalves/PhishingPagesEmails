@@ -62,23 +62,23 @@ namespace ServerEmail
 
         static MailMessage EmailStructure(string emailTo)
         {
-            MailMessage mensagem = new MailMessage();
+            MailMessage message = new MailMessage();
 
             //add the email you want to send the message
-            mensagem.To.Add(new MailAddress(emailTo));
-            //add the phishing email 
+            message.To.Add(new MailAddress(emailTo));
+            //add the phishing email
             //add the name of the organization/person (optional)
-            mensagem.From = new MailAddress(phishingEmail, "name of the organization/person");
+            message.From = new MailAddress(phishingEmail, "name of the organization/person(optional)");
             //subject of the email
-            mensagem.Subject = "yourSubject";
+            message.Subject = "yourSubject";
             //body's message
-            mensagem.Body = "Email's body message" + 
+            message.Body = "Email's body message" + 
                              "<br/>" +
                             phishingPage;
 
-            mensagem.IsBodyHtml = true;
+            message.IsBodyHtml = true;
 
-            return mensagem;
+            return message;
         }
 
        
